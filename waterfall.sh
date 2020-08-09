@@ -55,7 +55,7 @@ while (( "$#" )); do
       ;;
     -ms|--start-memory)
       if [ -n "$2" ] && [ ${2:0:1} != "-" ]; then
-        WATERFALL_MIN_MEMORY=$2
+        v=$2
         shift 2
       else
         echo "ERROR: Argument for $1 is missing" >&2
